@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./fotos/logo sin recortar.jpg">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: rgba(255, 204, 0, 0.8);
+            color: #4a90e2;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f7f7f7;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        ul li img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #4a90e2;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 5px solid #4a90e2;
+            background: #f9f9f9;
+        }
+        .photo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .photo-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #4a90e2;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Blog</h1>
+        <p>Explora mis pasiones y conéctate conmigo</p>
+    </header>
+    <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#intereses">Intereses</a>
+    </nav>
+    <div class="container">
+        <section id="sobre-mi" class="section">
+            <h2>Sobre Mí</h2>
+            <div class="photo-container">
+                <img src="./fotos/yo.jpg" alt="Mi Foto">
+            </div>
+            <p>Hola, soy un administrador de redes privadas en La Habana. Me apasiona el mundo de los videojuegos y disfruto mucho de las series y películas.</p>
+        </section>
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de mis redes sociales:</p>
+            <ul>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                    WhatsApp: <a href="https://wa.me/5363990962?text=Hola%20vengo%20desde%20su%20blog%20personal">Envíame un mensaje</a>
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                    Facebook: <a href="https://www.facebook.com/asleydavid.ramossanchez/">Tu Perfil</a>
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    Instagram: <a href="https://www.instagram.com/eldavid_1792/">Tu Perfil</a>
+                </li>
+            </ul>
+        </section>
+        <section id="intereses" class="section">
+            <h2>Mis Intereses</h2>
+            <p>Me encanta jugar videojuegos, ver series y películas. Aquí compartiré mis recomendaciones y opiniones sobre lo que estoy viendo y jugando.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
